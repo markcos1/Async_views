@@ -2,6 +2,8 @@ import asyncio
 import time
 from django.http import JsonResponse
 
+
+# Create your views here.
 async def contador_tempo_view(request):
     inicio = time.time()
 
@@ -15,3 +17,4 @@ async def contador_tempo_view(request):
         'mensagem': 'Contagem finalizada',
         'tempo_total': f'{tempo_total} segundos'
     })
+
